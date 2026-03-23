@@ -1,0 +1,74 @@
+{
+  "name": "@sportsnet/ui",
+  "version": "0.1.0",
+  "description": "Sportsnet shared UI component library - brand tokens, Tailwind preset, and React components",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/styles/index.css",
+    "./tailwind-preset": {
+      "import": "./dist/tailwind-preset.js",
+      "require": "./dist/tailwind-preset.cjs",
+      "types": "./dist/tailwind-preset.d.ts"
+    },
+    "./tokens": {
+      "import": "./dist/tokens/index.js",
+      "require": "./dist/tokens/index.cjs",
+      "types": "./dist/tokens/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "node ./node_modules/.bin/tsc --noEmit && node ./node_modules/.bin/vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0",
+    "tailwindcss": "^3.3.0"
+  },
+  "peerDependenciesMeta": {
+    "tailwindcss": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.9.1"
+  },
+  "keywords": [
+    "sportsnet",
+    "ui",
+    "react",
+    "tailwind",
+    "design-system",
+    "components"
+  ],
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
