@@ -2,7 +2,7 @@
 
 Shared UI library for Sportsnet projects. Provides design tokens, a Tailwind CSS preset, base styles, and React components to maintain consistent branding across all platforms (SIMS, EASY, Flipper, SFS, SEMS).
 
-**Version:** 0.1.1
+**Version:** 0.1.2
 **License:** UNLICENSED (internal use only)
 
 ---
