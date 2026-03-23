@@ -5,15 +5,12 @@ Shared UI library for Sportsnet projects. Provides design tokens, a Tailwind CSS
 ## Installation
 
 ```bash
-# From GitHub
-npm install git+https://github.com/nischal-sportsnet/sportsnet-ui.git
-
-# Or link locally for development
-cd /path/to/sportsnet-ui && npm link
-cd /path/to/your-project && npm link @sportsnet/ui
+npm install @sportsnet/ui
 ```
 
 ### Peer Dependencies
+
+These are required in your project but not bundled with the library:
 
 ```bash
 npm install react react-dom tailwindcss
